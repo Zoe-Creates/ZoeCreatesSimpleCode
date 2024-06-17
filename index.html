@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Portfolio Project</title>
+    <link rel= "stylesheet" href = "style.css" />
+    <link rel= "animation" href = "java.script" />
+</head>
+<style>
+*{
+    box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+  font-family: "Poppins",sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+    background-color: #a4cce7;
+    list-style: none;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    background-color: rgb(181, 235, 235);
+    border-radius: 20px;
+    min-height: 300px;
+    min-height: calc(100% - 200px)
+  
+   
+}
+.container{
+    width: 2000px;
+}
+
+header ul{
+
+    display: flex;  
+}
+header{
+    position: absolute;
+    top:-40px;
+    right:20px;
+    left: 20px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 20px;
+   transform: translateY(-40px);
+   box-shadow: 0 20px 15px rgba(28, 92, 255, 0.376);
+   backdrop-filter: blur(15px);
+}
+header a{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 40px;
+    
+}
+
+
+
+#list_item{
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius:25px ;
+    color: rgba(61, 129, 239, 0.951);
+    font-weight: bold;
+    list-style: none;
+opacity: 100px;
+justify-content: space-between;
+display:inline-block ;
+}
+header ul a.active{
+    transform: translateY(-40px);
+text-decoration: none;
+list-style: none;
+}
+header ul li{
+    list-style: none;
+    font-weight: bolder;
+    transform: translateY(-20px);
+    
+}
+
+#logo{
+    font-size: 1.9rem;
+    color: rgb(74, 138, 241);
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+    letter-spacing: .08rem;
+}
+.btn{
+    background-color:#a4cce7;
+    border-radius: 20px;
+    padding: 0.5rem 0.5rem;
+   font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #a4cce7;
+    letter-spacing: .05rem;
+    transition: all 0.5s ease-in-out;
+    color: rgb(74, 138, 241);
+}
+.btn:hover{
+    background-color: blur;
+    color:#6ebcf0;
+    transform:scale(1.05);
+    box-shadow: 0 20px 15px  rgba(122, 152, 241, 0.742);
+}
+.content a {
+    border-radius: 30px;
+    background-color:rgba(240, 248, 255, 0.51);
+    box-shadow: 0 20px 15px  rgba(122, 152, 241, 0.742);
+    padding: 15px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2d9ae2;
+    font-weight: bold;
+      font-family: "Poppins",sans-serif;
+
+}
+.img_box img{
+    width: 400px;
+    border-radius: 1000px;
+     animation: animate 5s linear infinite;
+     box-shadow: 0 20px 15px rgba(104, 231, 251, 0.98);
+transform: translateX(-20px);
+}
+
+
+
+
+    
+.content {
+    display: inline-block;
+    padding: 80px;
+    transform: translateX(-500px);
+    max-width: 700px;
+    padding-left: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+color: rgb(5, 92, 231);
+transform: translateX(-1px);
+backdrop-filter: blur(1px);
+background-color: rgba(203, 208, 213, 0.331);
+font-family: '"Poppins",sans-serif';
+}  
+.content h2{
+   
+  color:  rgb(74, 138, 241);
+}
+.content p{
+    min-width: 100px;
+    margin-bottom: 10px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+      font-family: "Poppins",sans-serif;
+}
+.running_man{
+    display: block;
+}
+</style>
+<body>
+    <section>
+<div class="container">
+<header  >
+    <a href="/" id="logo">My Portfolio</a>
+    <ul class ="list">
+       <li><a href="/" class="active" id="list_item"><button class="btn">Home</button></a></li>
+       <li id="list_item"><button class="btn">Project</button></li>
+       <li id="list_item"><button class="btn">About</button></li>
+       <li id="list_item"><button class="btn">Contact</button></li>
+
+    </ul>
+</header>
+
+<div class="content">
+    <h2>Hello! I'm Zoe</h2><br>
+    <p>Welcome! I’m a chemical engineering student venturing into frontend development. I am self-taught but learning very quickly. Here you'll find all the relatively big projects I'll be working on. I hope you enjoy!</p>
+    <a href="/" id="hire_btn"><lable>Hire Me</lable></a>
+</div>
+<div class="img_box">
+    <img id="img"src="https://img.freepik.com/free-vector/hand-drawn-gen-alpha-illustration_23-2151254927.jpg?w=1380&t=st=1718577206~exp=1718577806~hmac=2abd5bb73bdb6cb0fd3b614e87ae9b0b35c26220f656683aab429124be9ec059" width="100">
+</div>
+
+</div>
+
+    </section>
+</body>
+</html>
